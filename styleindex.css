@@ -1,0 +1,447 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Protest Riot', sans-serif  ;
+    
+    
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right ,rgb(243, 247, 243),rgba(6, 5, 5, 0.253));
+}
+.welcome{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+/*caroucsel style*/
+.contaniercar{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+/*discount style*/
+.discount{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.discount div{
+    width: 350px;
+    height: 420px;
+    position: relative;
+    transition: 0.2s;
+    border: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+}
+
+.discount div:hover{
+    width: 370px;
+    height: 440px;
+    z-index: 3;
+    border: 3px solid;
+    border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+}
+
+.imageone{
+    background-image: url('media/images/dis1.jpg');
+    background-size: cover;
+    position: relative;
+    
+}
+.imagetow{
+    background-image: url('media/images/dis2.jpg');
+    background-size: cover;
+    
+}
+.imagethree{
+    background-image: url('media/images/dis3.jpg');
+    background-size: cover;
+    
+}
+
+.discrip{
+    color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   padding: 15px;
+   box-sizing: border-box;
+    
+}
+.discrip p:nth-child(1){
+    font-size: larger;
+    color: rgb(52, 194, 42);
+}
+
+.discrip del{
+    color: red;
+    margin-right: 10px;
+}
+
+.discrip span{
+    color: green;
+}
+
+.discrip a{
+    background-color: rgb(52, 117, 209);
+    width: 80px;
+    text-align: center;
+    border-radius: 2px;
+    
+}
+.discrip a:hover{
+    z-index: 2;
+    background-color: rgb(74, 111, 162);
+}
+
+@media screen and (min-width:900px) and (max-width : 1225px)
+{
+    .discount div{
+        width: 262.5px;
+        height: 315px;
+        position: relative;
+        transition: 0.2s;
+        border: 2px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        font-size: small;
+    }
+    
+    .discount div:hover{
+        width: 277.5px;
+        height: 330px;
+        z-index: 3;
+        border: 3px solid;
+        border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+    } 
+
+    .discrip a{
+        background-color: rgb(52, 117, 209);
+        width: 60px;
+        text-align: center;
+        border-radius: 2px;
+        
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:720px)
+{
+    .discount div{
+        width: 175px;
+        height: 210px;
+        position: relative;
+        transition: 0.2s;
+        border: 2px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        font-size: smaller;
+    }
+    
+    .discount div:hover{
+        width: 185px;
+        height: 220px;
+        z-index: 3;
+        border: 3px solid;
+        border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+    } 
+
+    .discrip a{
+        background-color: rgb(52, 117, 209);
+        width: 50px;
+        text-align: center;
+        border-radius: 2px;
+        
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .discount div{
+        width: 105px;
+        height: 126px;
+        position: relative;
+        transition: 0.2s;
+        border: 2px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        font-size: xx-small;
+    }
+    
+    .discount div:hover{
+        width: 111px;
+        height: 132px;
+        z-index: 3;
+        border: 3px solid;
+        border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+    } 
+
+    .discrip a{
+        background-color: rgb(52, 117, 209);
+        width: 40px;
+        text-align: center;
+        border-radius: 2px;
+        
+    }
+    .discountdis{
+        display: none;
+    }
+
+}
+
+/*brand style*/
+.brand{
+    width: 100%;
+    background: linear-gradient(to right ,rgb(243, 247, 243),rgba(6, 5, 5, 0.253));
+    margin-top: 30px;
+    padding: 30px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.brand div{
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.brand div:hover{
+    border: 3px solid;
+    border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+    width: 270px;
+    height: 270px;
+}
+.asus{
+    background-image: url(media/images/asus.jpg);
+    
+
+}
+
+.hp{
+    background-image: url(media/images/hp.jpg);
+    
+
+}
+
+.lenovo{
+    background-image: url(media/images/lenovo.jpg);
+}
+
+.dell{
+    background-image: url(media/images/dell.jpg);
+}
+
+.apple{
+    background-image: url(media/images/apple.jpg);
+}
+
+.samsung{
+    background-image: url(media/images/samsung.jpg);
+}
+
+@media screen and (min-width:900px) and (max-width : 1225px)
+{
+    .brand div{
+        background-size: cover;
+        width: 187.5px;
+        height: 187.5px;
+        border: 2px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        margin: 10px;
+        transition: 0.2s;
+    }
+    
+    .brand div:hover{
+        border: 3px solid;
+        border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+        width: 202.5px;
+        height: 202.5px;
+    }
+}
+
+@media screen and (max-width:900px)
+{
+    .brand div{
+        background-size: cover;
+        width: 125px;
+        height: 125px;
+        border: 2px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        margin: 10px;
+        transition: 0.2s;
+    }
+    
+    .brand div:hover{
+        border: 3px solid;
+        border-image: linear-gradient(to left ,rgb(52, 117, 209) ,gray)1;
+        width: 135px;
+        height: 135px;
+    }
+}
+
+/*block style*/
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blocks .one ,.tow ,.three ,.four ,.five ,.six ,.seven ,.eight ,.nine ,.ten ,.eleven,.twelve{
+    width: 225px;
+    height: 350px;
+    margin: 40px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    position: relative;
+    transition: 0.2s;
+    border: 3px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+    
+}
+
+.spacification{
+    font-size:small ;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.discr{
+    color: black;
+    position: absolute;
+    bottom: 5px;
+}
+.discr span{
+    color: green;
+}
+
+.blocks div{
+    background-color: white;
+}
+
+.blocks img{
+    width: 219px;
+    height: 221px;
+    position: absolute;
+    top: 0px;
+
+}
+
+@media screen and (max-width:900px)
+{
+    .blocks .one ,.tow ,.three ,.four ,.five ,.six ,.seven ,.eight ,.nine ,.ten ,.eleven,.twelve{
+        width: 135px;
+        height: 210px;
+        margin: 24px;
+        padding: 2.4px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        position: relative;
+        transition: 0.2s;
+        border: 1.8px solid;
+        border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+        
+    }
+    
+    .spacification{
+        font-size:smaller ;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0;
+    }
+    
+    
+    .discr{
+        color: black;
+        font-size: small;
+        position: absolute;
+        bottom: 3px;
+        margin: 0;
+    }
+
+    .blocks img{
+        width: 131.4px;
+        height: 132.6px;
+        position: absolute;
+        top: 0px;
+        margin: 0;
+    
+    }
+    .discr p{
+        margin: 0;
+    }
+
+
+
+}
+
+/*pagination style*/
+.pag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*footer style*/
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: #e2e3e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.horizrow{
+    width: 80%;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.links a{
+    margin-left: 22px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.links a:hover{
+    color: rgb(36, 51, 226);
+    font-size: larger;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.icons i{
+    margin: 10px;
+}
+
+.icons i:hover{
+    color:rgb(36, 51, 226) ;
+}
+
+

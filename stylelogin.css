@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right ,rgb(243, 247, 243),rgba(6, 5, 5, 0.253));
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containt{
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+    z-index: 2;
+    color: rgb(44, 133, 188);
+
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+.bottonst{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    top: 140px;
+}
+
+.fin{
+    margin-left:23px ;
+}
+.ein{
+    margin-left: 29px;
+}
+button{
+    padding: 2px;
+    border-radius: 3px; 
+    color: rgb(44, 133, 188);
+    border: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+}
+
+input{
+    background-color: rgba(128, 128, 128, 0.153);
+    border: 2px solid;
+    border-image: linear-gradient(to right ,rgb(52, 117, 209) ,gray)1;
+}
+
+h3{
+    color: rgb(25, 78, 110);
+}
